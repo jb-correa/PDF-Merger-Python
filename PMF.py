@@ -1,6 +1,6 @@
 from PyPDF2 import PdfFileMerger
 
-pdfs=['.pdf', '.pdf']
+pdfs=['*.pdf', '*.pdf']
 
 merger=PdfFileMerger()
 
