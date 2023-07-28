@@ -1,14 +1,18 @@
+from fileinput import filename
 from PyPDF2 import PdfFileMerger
 import os
 from pathlib import Path
+import shutil
 
 
-ruta=r'C:/Users/jbaut/Desktop/Programing/Python/Udemy-Python Developer/Proyectos/PDF-Merger-Python/pdf-merger-python'
+current_dir = os.path.dirname('C:/Users/jbaut/Desktop/Programing/Python/Udemy-Python Developer/Proyectos/PDF-Merger-Python/pdf-merger-python')
 
-os.path.print
+pdfs=[]
 
-
-pdfs=[ruta+'/27-07-2023 Factura Vicario.pdf', ruta+'/27-07-2023 Factura Vega.pdf']
+for filename in os.listdir(current_dir):
+	if filename.endswith('.pdf'):
+        	pdfs.append(filename)
+		
 
 merger=PdfFileMerger()
 
