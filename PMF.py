@@ -5,7 +5,7 @@ from pathlib import Path
 import shutil
 
 
-current_dir = os.path.dirname('C:/Users/jbaut/Desktop/Programing/Python/Udemy-Python Developer/Proyectos/PDF-Merger-Python/pdf-merger-python')
+current_dir = os.path.dirname('C:/Users/jbaut/Desktop/Programing/Python/Udemy-Python Developer/Proyectos/PDF-Merger-Python/pdf-merger-python/')
 
 pdfs=[]
 
