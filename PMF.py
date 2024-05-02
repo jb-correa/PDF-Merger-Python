@@ -4,8 +4,8 @@ import os
 from pathlib import Path
 import shutil
 
-
-current_dir = os.path.dirname('C:/Users/jbaut/Desktop/Programing/Python/Udemy-Python Developer/Proyectos/PDF-Merger-Python/pdf-merger-python/')
+#Colocar el directorio donde se desea unir los PDFs
+current_dir = os.path.dirname('')
 
 pdfs=[]
 
@@ -13,7 +13,6 @@ for filename in os.listdir(current_dir):
 	if filename.endswith('.pdf'):
         	pdfs.append(filename)
 		
-
 merger=PdfFileMerger()
 
 for pdf in pdfs:
